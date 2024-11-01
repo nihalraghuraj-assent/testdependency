@@ -27,9 +27,9 @@ jobs:
       # You may pin to the exact commit or the version.
       # uses: advanced-security/component-detection-dependency-submission-action@5a8ce4ad8c6fbb9b88f66f672014e44b427d7d54
       uses: advanced-security/component-detection-dependency-submission-action@v0.0.2
-      # with:
-      #   # GitHub Personal Access Token (PAT). Defaults to PAT provided by Actions runner.
-      #   token: # optional, default is ${{ github.token }}
+      with:
+        # GitHub Personal Access Token (PAT). Defaults to PAT provided by Actions runner.
+        token: # optional, default is ${{ secrets.GH_TOKEN }}
       #   # The path to the directory containing the environment files to upload. Defaults to Actions working directory.
       #   filePath: # optional, default is .
       #   # Filters out specific directories following a minimatch pattern.
